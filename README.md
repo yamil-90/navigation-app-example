@@ -62,10 +62,11 @@ npm install @react-navigation/native-stack
 ```
 import React from 'react'
 
-import { NavigationContainer } from '@react-navigation/navigation'
-import { createStackNavigator } from '@react-navigation/native-stack'
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-const Stack = createStackNavigator()
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
