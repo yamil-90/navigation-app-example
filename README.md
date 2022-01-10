@@ -56,3 +56,30 @@ npm
 ```
 npm install @react-navigation/native-stack
 ```
+
+* finally we import the navigation and stack in our app.js
+
+```
+import React from 'react'
+
+import { NavigationContainer } from '@react-navigation/navigation'
+import { createStackNavigator } from '@react-navigation/native-stack'
+
+const Stack = createStackNavigator()
+
+const App = () => {
+  return (
+    <>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen />
+          <Stack.Screen />
+          <Stack.Screen />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </>
+  )
+}
+
+export default App
+```
